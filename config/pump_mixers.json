@@ -1,0 +1,16 @@
+{
+  "mixers": [
+    {
+      "name": "Tonic",
+      "pump": 1
+    },
+    {
+      "name": "Soda Water",
+      "pump": 2
+    },
+    {
+      "name": "Lemonade",
+      "pump": "None"
+    }
+  ]
+}

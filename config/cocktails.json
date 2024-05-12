@@ -1,0 +1,69 @@
+{
+  "Cocktails": [
+    {
+      "name": "Gin & Tonic",
+      "ingredients": {
+        "liquor": {
+          "type": "Gin",
+          "number_of_shots": 1
+        },
+        "mixer": {
+          "type": "Tonic",
+          "ml": 200
+        }
+      }
+    },
+    {
+      "name": "Get Fucked Up",
+      "ingredients": {
+        "liquor": {
+          "type": "any",
+          "number_of_shots": 3
+        },
+        "mixer": {
+          "type": "any",
+          "ml": 50
+        }
+      }
+    },
+    {
+      "name": "Margarita",
+      "ingredients": {
+        "liquor": {
+          "type": "Tequila",
+          "number_of_shots": 2
+        },
+        "mixer": {
+          "type": "Lime Juice",
+          "ml": 30
+        }
+      }
+    },
+    {
+      "name": "Martini",
+      "ingredients": {
+        "liquor": {
+          "type": "Gin",
+          "number_of_shots": 2
+        },
+        "mixer": {
+          "type": "Dry Vermouth",
+          "ml": 15
+        }
+      }
+    },
+    {
+      "name": "Mojito",
+      "ingredients": {
+        "liquor": {
+          "type": "White Rum",
+          "number_of_shots": 1
+        },
+        "mixer": {
+          "type": "Soda Water",
+          "ml": 60
+        }
+      }
+    }
+  ]
+}
