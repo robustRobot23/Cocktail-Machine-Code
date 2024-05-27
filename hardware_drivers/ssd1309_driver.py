@@ -1,9 +1,16 @@
+
+from machine import Pin, SPI
+
 """MicroPython SSD1309 OLED monochrom display driver."""
 from math import cos, sin, pi, radians
 from micropython import const  # type: ignore
 from framebuf import FrameBuffer, GS8, MONO_HMSB, MONO_VLSB  # type: ignore
 from utime import sleep_ms  # type: ignore
 
+from user_lib.pin_definitions import *
+
+
+DISPLAY_WIDTH = 128  # Width of LCD display
 
 class Display(object):
     """Serial and I2C interface for SD1309 monochrome OLED display.
@@ -906,3 +913,9 @@ class Display(object):
         self.cs(0)
         self.spi.write(data)
         self.cs(1)
+
+
+spi = SPI(1, baudrate=10000000, sck=Pin(SCK_PIN_NUM), mosi=Pin(MOSI_PIN_NUM))
+display = Display(spi, dc=Pin(OLED_DC_PIN_NUM), cs=Pin(OLED_CS_PIN_NUM), rst=Pin(OLED_RESET_PIN_NUM))
+
+
