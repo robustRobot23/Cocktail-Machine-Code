@@ -4,7 +4,7 @@ from hardware_drivers.ssd1309_driver import display, DISPLAY_WIDTH
 class Box(object):
     """Bouncing box."""
 
-    def __init__(self, screen_width, screen_height, size, display):
+    def __init__(self, screen_width, screen_height, size, display=display):
         """Initialize box.
         Args:
             screen_width (int): Width of screen.

@@ -26,10 +26,11 @@ def load_cocktails():
             liquor = cocktail_ingredients["liquor"]
             cocktail.liquor = liquor["type"]
             cocktail.shots_liquor = liquor["number_of_shots"]
-
-            mixer = cocktail_ingredients["mixer"]
-            cocktail.mixers = [mixer["type"]]
-            cocktail.mixers_ml = mixer["ml"]
+            
+            mixers = cocktail_ingredients["mixers"]
+            for mixer in mixers:
+                cocktail.mixers.append(mixer["type"])
+                cocktail.mixers_ml.append(mixer["ml"])
 
             cocktails.append(cocktail)
 

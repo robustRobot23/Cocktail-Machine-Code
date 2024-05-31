@@ -1,6 +1,4 @@
-# from user_lib.oled_display import write_text, clear_display, focus
-from user_lib.cocktails import Cocktail
-import time
+from user_lib.oled_display import write_text, clear_display, focus
 
 class MenuItem:
     def __init__(self, name, action=None, content=None, submenu=None):
@@ -35,7 +33,7 @@ class Menu:
         self.items = []
 
     def display(self):
-        # clear_display()
+        clear_display()
         if len(self.items) <= 4:
             display_items = self.items
             focus_index = self.selected_index
@@ -49,9 +47,9 @@ class Menu:
             focus_index = 0
 
         text = [item.name for item in display_items]
-        # write_text(text)
+        write_text(text)
         print(text)
         print()
-        # focus(focus_index)
+        focus(focus_index)
 
 
